@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CorpsDuSite.master.cs" Inherits="TP4.CorpsDuSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="TitrePage" runat="server"></title>
+    <link rel="stylesheet" href="css/styles.css" media="all" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="page">      
+        <nav id="menuMembre" runat="server">
+            <ul>               
+                <li><a href='AccueilMembre.aspx'>Accueil</a></li>
+                <li><a href='Liste.aspx'>Liste des DVD</a></li>
+                <li><a href='Rabais.aspx'>Rabais</a></li>
+                <li><a href='AccueilInvite.aspx'>Section invites</a></li>
+                <li><a href='Deconnexion.aspx'><img src="images/deconnexion.png" alt="" /> Deconnexion</a></li>       
+            </ul>
+        </nav>
+
+        <nav id="menuInvite" runat="server">
+            <ul>
+                <li><a href='AccueilInvite.aspx'>Accueil</a></li>
+		        <li><a href='ListeInvite.aspx'>Liste des DVD</a></li>
+		        <li><a href='Circulaire.aspx'>Circulaire</a></li>
+                <% 
+                    if (Session["type"].ToString() == "i")
+                        Response.Write("<li><a href='Inscription.aspx'>Inscription</a></li>");
+                %>              
+                <% 
+                    if (Session["type"].ToString() == "m")
+                        Response.Write("<li><a href='AccueilMembre.aspx'>Section membre</a></li>");
+                %>              
+                <li><a href='Deconnexion.aspx'><img src="images/deconnexion.png" alt="" /> Deconnexion</a></li>
+            </ul>
+        </nav>
+        <div id="infoBoard">
+
+            <div id="infosUtilisateur">
+                <% 
+                    if (Session["type"].ToString() == "m")
+                       Response.Write("Membre ");
+                   else
+                        Response.Write("Invité "); 
+                %>
+                connecté : <% Response.Write(Session["prenom"].ToString() + " " + Session["nom"].ToString());  %>
+            </div>
+
+            <div id="infosAchats">
+                <% 
+                    if(Session["type"].ToString() == "m")
+                    Response.Write("<span id='nbItem'>" + Convert.ToInt32(Session["nbItem"]) +" Item(s) </span>"+
+                    "<a href='Panier.aspx'><img src='images/panier.png' alt='petitpanier' /></a>");          
+                 %>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+body
+{
+	font-family:Arial, Times, serif;
+	background-color:white;
+	background-image: url("../images/fond.png");
+	background-repeat:repeat-x;
+	color:white;
+	font-size:0.9em
+}
+h1
+{
+	font-weight: bold;
+	font-size:1.4em;
+	color:rgb(190, 11, 10);
+	text-align:center;
+	margin:10px;
+	margin-top:20px;
+	border-bottom: 2px ridge white;
+	
+}
+h2
+{
+	font-size:1.2em;
+	font-style:italic;
+	color:rgb(190, 11, 10);
+	text-align:center;
+	padding:6px;
+}
+h3
+{
+	font-size:1.2em;
+	margin:8px 0px 8px 0px;
+}
+
+div
+{
+	margin:5px;
+}
+
+img
+{
+	border:0;
+}
+
+#page
+{
+	width:800px;
+	background-color:#999;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	min-height:500px;
+	position:relative;
+	padding-bottom:10px;
+	border: 3px solid #777;
+	border-radius: 8px;
+}
+#sectionFormConnexion
+{
+	border:2px solid white;
+	border-radius: 8px;
+	width:420px;
+	display:inline-block;
+	vertical-align:top;
+	padding:4px;
+	background-color:rgb(212, 212, 212);
+	color:black;
+}
+#sectionLogin label, #sectionMotPasse label
+{
+    display: inline-block;
+    width: 110px;
+}
+#sectionCarrousel
+{
+	display:inline-block;
+	width:330px;
+	position:relative;
+	top:80px;
+	left:30px;
+}
+#sectionBoutons
+{
+	text-align:right;
+}
+#intro
+{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}
+
+#sectionCookie
+{
+	margin-top:15px;
+	margin-left:0px;
+	position:relative;
+}
+
+#bande
+{
+	margin-top:15px;
+	text-align:center;
+}
+
+#menuInvite
+{
+    background-color:#515e6d;
+}
+
+#menuMembre
+{
+    background-color:#0f0f0f;
+}
+
+nav
+{
+	
+	color:#ccc;
+	text-align:center;
+	height:25px;
+	padding-top:5px;
+	
+}
+nav ul
+{
+	margin: 0;
+}
+nav li
+{
+    padding-left:8px;
+    padding-right: 8px;
+	display: inline-block;	
+	border-radius:8px 8px 8px 8px;
+}
+#menuInvite li
+{
+    background-color:#87aaad;
+}
+#menuMembre li
+{
+    background-color:#7c827e;
+}
+nav a:hover
+{
+	color:black;
+}
+nav a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}
+
+#msgErreur
+{
+	color:#FF3311;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.message_erreur
+{
+    color:Red;
+}
+
+#infoBoard
+{
+    height:40px;
+    border-bottom:1px solid #423434;
+    border-top:1px solid #423434;    
+}
+#infosUtilisateur
+{
+    margin-top:10px;
+    float:left;
+}
+#infosAchats
+{
+    
+    margin-top:2px;
+    float:right;
+}
+#infosAchats span
+{ 
+    font-weight:bold;
+    color:#b5330b;
+   vertical-align:super;
+}
+table
+{
+	border:1px solid #171616;
+	background-color:#999;
+	margin:auto;
+	width:95%;
+	text-align:center;
+}
+td
+{	
+    border:1px solid #a6b5b2;
+	color:#363333;
+	padding: 3px;
+}
+td img
+{
+    max-width:88px;
+    max-height:114px;
+}
+#BoutonsAjout
+{
+    float:right;
+    margin-bottom:10px;
+}
+#imgCent
+{
+    text-align:center;
+}
+#boutonCommande
+{
+    margin-left:20px;
+    margin-top:20px;
+}
+.montant
+{
+    color:#e2f707;
+}
+.tabHeader
+{
+    color:#f0c350;
+}
+#formAjoutDvd label
+{
+    display:inline-block;
+    width:100px;
+}
+#sectionFichier label
+{
+    width:auto;
+}
+.textDescritionMenu
+{
+color:rgb(46,122,199); 
+}
+.txt
+{
+position:absolute;
+left:130px;
+}
+#formAjoutMembre label
+{
+    display:inline-block;
+    width:100px;
+}
+

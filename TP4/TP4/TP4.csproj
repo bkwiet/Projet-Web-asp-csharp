@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9BB0000-526A-41FF-ACBF-432D7559625C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TP4</RootNamespace>
+    <AssemblyName>TP4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\BD_Login.mdb" />
+    <Content Include="Connexion.aspx" />
+    <Content Include="css\Styles.css" />
+    <Content Include="images\circulaire.jpg" />
+    <Content Include="images\commande.png" />
+    <Content Include="images\construction.png" />
+    <Content Include="images\deconnexion.png" />
+    <Content Include="images\DVD.png" />
+    <Content Include="images\erreur.png" />
+    <Content Include="images\fond.png" />
+    <Content Include="images\panier.png" />
+    <Content Include="images\petitpanier.png" />
+    <Content Include="images\supprimer.png" />
+    <Content Include="images\supprimerPetit.png" />
+    <Content Include="images\tv.png" />
+    <Content Include="js\carrousel.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="AccueilInvite.aspx" />
+    <Content Include="AccueilMembre.aspx" />
+    <Content Include="Ajout.aspx" />
+    <Content Include="Circulaire.aspx" />
+    <Content Include="Commande.aspx" />
+    <Content Include="Inscription.aspx" />
+    <Content Include="Liste.aspx" />
+    <Content Include="ListeInvite.aspx" />
+    <Content Include="Panier.aspx" />
+    <Content Include="Rabais.aspx" />
+    <Content Include="Suppression.aspx" />
+    <Content Include="Deconnexion.aspx" />
+    <Content Include="Erreur.aspx" />
+    <Content Include="AjoutAchats.aspx" />
+    <Content Include="SuppressionAchats.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connexion.aspx.cs">
+      <DependentUpon>Connexion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Connexion.aspx.designer.cs">
+      <DependentUpon>Connexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CorpsDuSite.Master.cs">
+      <DependentUpon>CorpsDuSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CorpsDuSite.Master.designer.cs">
+      <DependentUpon>CorpsDuSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AccueilInvite.aspx.cs">
+      <DependentUpon>AccueilInvite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccueilInvite.aspx.designer.cs">
+      <DependentUpon>AccueilInvite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccueilMembre.aspx.cs">
+      <DependentUpon>AccueilMembre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccueilMembre.aspx.designer.cs">
+      <DependentUpon>AccueilMembre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout.aspx.cs">
+      <DependentUpon>Ajout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajout.aspx.designer.cs">
+      <DependentUpon>Ajout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Circulaire.aspx.cs">
+      <DependentUpon>Circulaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Circulaire.aspx.designer.cs">
+      <DependentUpon>Circulaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Commande.aspx.cs">
+      <DependentUpon>Commande.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commande.aspx.designer.cs">
+      <DependentUpon>Commande.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inscription.aspx.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inscription.aspx.designer.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Liste.aspx.cs">
+      <DependentUpon>Liste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Liste.aspx.designer.cs">
+      <DependentUpon>Liste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListeInvite.aspx.cs">
+      <DependentUpon>ListeInvite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListeInvite.aspx.designer.cs">
+      <DependentUpon>ListeInvite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panier.aspx.cs">
+      <DependentUpon>Panier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panier.aspx.designer.cs">
+      <DependentUpon>Panier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rabais.aspx.cs">
+      <DependentUpon>Rabais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rabais.aspx.designer.cs">
+      <DependentUpon>Rabais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suppression.aspx.cs">
+      <DependentUpon>Suppression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suppression.aspx.designer.cs">
+      <DependentUpon>Suppression.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deconnexion.aspx.cs">
+      <DependentUpon>Deconnexion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deconnexion.aspx.designer.cs">
+      <DependentUpon>Deconnexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Erreur.aspx.cs">
+      <DependentUpon>Erreur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Erreur.aspx.designer.cs">
+      <DependentUpon>Erreur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutAchats.aspx.cs">
+      <DependentUpon>AjoutAchats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjoutAchats.aspx.designer.cs">
+      <DependentUpon>AjoutAchats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuppressionAchats.aspx.cs">
+      <DependentUpon>SuppressionAchats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuppressionAchats.aspx.designer.cs">
+      <DependentUpon>SuppressionAchats.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Invite\" />
+    <Folder Include="Membre\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CorpsDuSite.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62996</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
